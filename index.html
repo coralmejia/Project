@@ -8,62 +8,93 @@
     <title>Coral's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="dist/index.css">
+    <script src="https://kit.fontawsome.com/8e74abe3db.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-    <!-- LANDING PAGE -->
-    <section id = 'home'>
-        <div class="overlay">
-            <!--PRIMARY NAVIGATION-->
-            <nav role="navigation">
-                <ul class="vertical-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact" >Contact Me</a></li>
+    <header>
+        <div class="logo">
+            <img src="img/devjane.png" alt="">
+        </div>
+            <button class="nav-toggle" aria-label= "toggle navigation"><span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                        <li class ="nav__item"><a href="#home" class ="nav__link">Home</a></li>
+                        <li class ="nav__item"><a href="#about" class ="nav__link">About Me</a></li>
+                        <li class ="nav__item"><a href="#work" class ="nav__link">My work</a></li>
                 </ul>
             </nav>
-            <!--END OF PIMARY NAVIGATION-->
+    </header>        
 
-            <!-- CONTAINER -->
-            <div class = 'container'>
-                <h1><span class="logo">Welcome!</span></h1>
-            </div>
-            <!-- END OF CONTAINER -->
+    <!--Greeting Intro-->
+    <section class ="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Coral Mejia</strong>
+        </h1>
+        <p class="section__subtitle section__title--services">Junior Software Engineer</p>
+        <img src="IMG-9850.PNG" alt="me" class = 'intro__image'>
+     </section>
+
+
+
+
+    <!--ABOUT ME-->
+    <section class = "about-me" id = 'about'>
+        <h2 class ="section__title__title--about">What I Do</h2>
+
+        <div class="about-me__body">
+            <p> I'm currently a junior software engineer for 
+                American Express. I am training through the Multiverse platform. My focus right now is JavaScript and HTML/CSS. I'm a few credits  shy from earning my bachelors in Political Science at Montclair State University. I am driven to excell in software engineering as I sharpen my skills in the few months to come through experience, plenty of practice and hard work.</p>
+
         </div>
+        
+        <img src="https://2.bp.blogspot.com/-4Z2klivERKA/VsPKKcJrVwI/AAAAAAAAISM/Gzd1kwDYaeE/s1600/1.png" alt="AMEX"
+        width = "500px">
 
-    </section>
-
-    <!-- END OF LANDING PAGE -->
-
-    <!--ABOUT-->
-    <section id = 'about' >
+        
+    </section>  
 
         <!-- CONTAINER -->
-        <div class="container">
-            <h2>a little about me...</h2>
-            <div class ='row info'>
-                <div class="'col-sm-8">
-                    <p>
-                        I'm currently training as a junior software engineer for American Express through the revolutionary Multiverse platform. My focus right now is JavaScript and HTML/CSS. I'm a few credits shy from earning my bachelors in Political Science at Montclair State University. I am driven to excell in software engineering as I sharpen my skills in the few months to come through experience, plenty of practice and hard work.
+      <!--  <div class="paralax"></div>-->
 
-                        <span
-                        class="signature">.Coral Mejia</span>
-                    </p>
-                    <div class="'col-md-4">
-                        <img
-                        src=""
-                    </div>
-                </div>
+                <!--<div class = 'paralax'></div>-->
+   
+        <!--MY WORK-->
+        <section class="my-work" id = "work">
+            <h2 class="section__title">My work</h2>
+            <p class="section__subtitle">Click below to access my work</p>
+
+            <div class="portfolio">
+
+                <!--PORTFOLIO ITEM 1-->
+                <a href="https://codepen.io/Coral-oshun/pen/rNpBmev" class="portfolio__item">
+                    <img src="Screen Shot 2022-06-20 at 7.25.20 AM.png" alt="codepen" class="code">
+                </a>
+
+                <!--PORTFOLIO ITEM 2-->
+                    <img src="Screen Shot 2022-06-21 at 4.18.12 PM.png" alt="This Website">
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!--FOOTER-->
+        <footer class="footer">
+            <a href="mailto:coral.m.mejia@aexp.com" class="footer__link">coral.m.mejia@aexp.com</a><i class="fa-solid fa-envelope"></i>
+            <ul class="social-list">
+                <li class = 'social-list__item'><a class="social-list--link" href="https://codepen.io/Coral-oshun"><i class="fab fa-codepen"></i>
+            </a>
+            </li>
+                <li class = 'social-list__item'><a class="social-list--link" href="https://github.com/coralmejia"><i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+         </ul>
+        </footer>
 
 </body>
 
